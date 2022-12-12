@@ -1,0 +1,11 @@
+// Bật dev trên trình duyệt , thay link và chạy
+function cc(resourceURL){
+	let _rfr = ['{','}','https','.com','.win','.club','.vip','"',':',',','[',']','/','-','.'];
+    let _rto = ['kjdqpr','dfwvkf','oevcstyip','wzcpal','prldse','jzkevu','sibawp','giwrvk','cxkayu','pzfbtx','rvzuws','lebtq','ftmzk','ultawb','rbqwxi'];
+    for( let t = 0; t<_rfr.length; t++ ){
+        resourceURL = resourceURL.replace(new RegExp(_rfr[t].replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),"g"),(typeof(_rto[t])=="string")?_rto[t].replace(/\$/g,"$$$$"):_rto[t]);
+    }
+    return resourceURL;
+}
+
+cc('https://xvideos.com');
